@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1" >
+    <listeners>
+        <listener class-name="uk.co.amazon.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Amazon Christmas Last Minute Deals" >
+        <classes>
+            <class name="uk.co.amazon.testsuite.DealsSortByLowToHigh"/>
+            <class name="uk.co.amazon.testsuite.GetListOfHighestDiscountedProducts"/>
+            <class name="uk.co.amazon.testsuite.NewCustomerCreateAccount"/>
+        </classes>
+    </test>
+</suite>
